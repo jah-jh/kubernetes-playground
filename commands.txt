@@ -1,0 +1,3 @@
+kubectl exec etcd-node-1 -n kube-system -- etcdctl --cacert /etc/kubernetes/pki/etcd/ca.crt --key /etc/kubernetes/pki/etcd/server.key --cert /etc/kubernetes/pki/etcd/server.crt -w table --endpoints=10.0.22.4:2379,10.0.22.5:2379 endpoint status - who is leader
+
+ubectl exec etcd-node-1 -n kube-system -- etcdctl --cacert /etc/kubernetes/pki/etcd/ca.crt --key /etc/kubernetes/pki/etcd/server.key --cert /etc/kubernetes/pki/etcd/server.crt  member list - members of cluster
